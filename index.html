@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="myButton">Open App</button>
+
+    <script type="text/javascript">
+      // Get the button element
+      var button = document.getElementById("myButton");
+
+      // Set the package name for the app
+      var appPackage = "com.shopee.id";
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        // Try to open the app
+        window.location.href =
+          "intent://#Intent;package=" + appPackage + ";end";
+      });
+    </script>
+  </body>
+</html>
